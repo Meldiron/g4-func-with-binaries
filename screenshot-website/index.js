@@ -1,9 +1,10 @@
 // const puppeteer = require("puppeteer");
-const fs = require("fs");
+// const fs = require("fs");
 
 module.exports = async ({ res }) => {
-  var stats = fs.statSync("/usr/local/server/src/function/chromium-browser");
-  return res.json(stats);
+    return res.send("Works");
+//   var stats = fs.statSync("/usr/local/server/src/function/chromium-browser");
+//   return res.json(stats);
   // Note 2
   //   const browser = await puppeteer.launch({
   //     executablePath: process.env.CHROME_BIN || null,
