@@ -7,6 +7,6 @@ echo @edge http://nl.alpinelinux.org/alpine/edge/main >> /etc/apk/repositories
 
 apk add --no-cache chromium@edge nss@edge
 
-wc -c /usr/bin/chromium-browser
+mv /usr/bin/chromium-browser /usr/local/build/chromium-browser
 
 echo "Chromium downloaded successfully"
