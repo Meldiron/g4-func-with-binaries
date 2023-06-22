@@ -4,7 +4,7 @@ const fs = require("fs");
 module.exports = async ({ res }) => {
   var stats = fs.statSync("/usr/local/server/src/function/chromium-browser");
   return res.json(stats);
-  // Note
+  // Note 2
   //   const browser = await puppeteer.launch({
   //     executablePath: process.env.CHROME_BIN || null,
   //     args: ["--no-sandbox", "--headless", "--disable-gpu"],
